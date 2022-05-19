@@ -3,7 +3,8 @@
   "info": {
     "name": "FeatureColumnsGroup",
     "displayName": "Feature columns group",
-    "icon": "star-of-life"
+    "icon": "star-of-life",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -11,6 +12,16 @@
       "type": "component",
       "repeatable": true,
       "component": "elements.feature-column"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

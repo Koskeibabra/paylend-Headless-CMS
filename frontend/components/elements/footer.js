@@ -5,7 +5,7 @@ import CustomLink from "./custom-link"
 
 const Footer = ({ footer }) => {
   return (
-    <footer className="pt-12 bg-gray-100">
+    <footer className="pt-12 bg-secondary font-serif">
       <div className="container flex flex-col lg:flex-row lg:justify-between">
         <div>
           {footer.logo && (
@@ -18,14 +18,14 @@ const Footer = ({ footer }) => {
               key={footerColumn.id}
               className="mt-10 lg:mt-0 w-6/12 lg:w-auto"
             >
-              <p className="uppercase tracking-wide font-semibold">
+              <p className="uppercase tracking-wide font-semibold text-accent">
                 {footerColumn.title}
               </p>
               <ul className="mt-2">
                 {footerColumn.links.map((link) => (
                   <li
                     key={link.id}
-                    className="text-gray-700 py-1 px-1 -mx-1 hover:text-gray-900"
+                    className="text-white py-1 px-1 -mx-1 hover:text-accent"
                   >
                     <CustomLink link={link}>{link.text}</CustomLink>
                   </li>
@@ -35,7 +35,7 @@ const Footer = ({ footer }) => {
           ))}
         </nav>
       </div>
-      <div className="text-sm bg-gray-200 py-6 text-gray-700">
+      <div className="text-sm bg-darkp py-6 text-white text-center">
         <div className="container">{footer.smallText}</div>
       </div>
     </footer>

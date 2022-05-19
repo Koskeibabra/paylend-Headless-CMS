@@ -133,6 +133,9 @@ export async function getPageData({ slug, locale, preview }) {
                   }
                   ... on ComponentSectionsFeatureColumnsGroup {
                     id
+                    image {
+                      ...FileParts
+                    }
                     features {
                       id
                       description
@@ -147,6 +150,9 @@ export async function getPageData({ slug, locale, preview }) {
                     features {
                       id
                       description
+                      desc1
+                      desc2
+                      desc3
                       link {
                         id
                         newTab
@@ -161,34 +167,17 @@ export async function getPageData({ slug, locale, preview }) {
                   }
                   ... on ComponentSectionsTestimonialsGroup {
                     id
-                    description
-                    link {
-                      id
-                      newTab
-                      text
-                      url
-                    }
-                    logos {
-                      id
-                      title
-                      logo {
-                        ...FileParts
-                      }
-                    }
                     testimonials {
                       id
-                      logo {
-                        ...FileParts
-                      }
+
                       picture {
                         ...FileParts
                       }
                       text
-                      authorName
-                      authorTitle
-                      link
+                      description
+
                     }
-                    title
+                  
                   }
                   ... on ComponentSectionsLargeVideo {
                     id

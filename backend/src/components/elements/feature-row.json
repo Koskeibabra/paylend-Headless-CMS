@@ -16,18 +16,27 @@
       "type": "text"
     },
     "media": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "videos"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      ]
     },
     "link": {
       "type": "component",
       "repeatable": false,
       "component": "links.link"
+    },
+    "desc1": {
+      "type": "text"
+    },
+    "desc2": {
+      "type": "text"
+    },
+    "desc3": {
+      "type": "text"
     }
   }
 }

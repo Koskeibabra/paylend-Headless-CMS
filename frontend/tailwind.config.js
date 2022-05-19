@@ -8,6 +8,14 @@ module.exports = {
     extend: {
       colors: {
         primary: colors.indigo,
+        accent: '#F0047F',
+        secondary: '#4A0D7A',
+        darkp: '#330A54'
+      },
+      fontFamily: {
+        sans: ['Montserrat', 'sans-serif'],
+        serif: ['Nunito', 'sans-serif']
+        
       },
       container: {
         center: true,
